@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+
+    <include
+        android:id="@+id/add_note_toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:paddingLeft="20dp"
+            android:hint="Enter Your Title Here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_title"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:alpha=".3"
+            android:background="@android:color/black"/>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/notes_desc"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:text="Create Note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/create_noteBtn"
+            android:background="@drawable/bg_button"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
